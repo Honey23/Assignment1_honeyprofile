@@ -1,0 +1,14 @@
+{
+  "profiles": [
+    {
+      "firstname": "Honey",
+      "lastname": "Shah",
+      "bio":
+      "My name is honey. I study in Georgian College. I have worked with different languages like javascript, php, C++, html, css, asp.net. I am studying Computer Programmer course. I am studying mobile development, javascript, C++, general courses and optional courses and project management.",
+      "tagline": "Computer Programmer",
+      "twitter": "https://twitter.com/",
+      "imgSrc": "Group.jpg",
+      "id": "Grp"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+mixin NavItem(name)
+  li.nav-item
+    a.nav-link(href=`/${name.toLowerCase()}`)= name
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  a.navbar-brand(href='#') HoneyProfile
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarSupportedContent.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto
+      - var names = ['Home', 'AboutMe', 'MyProjects', 'MyServices', 'ContactMe']
+      for name in names
+        +NavItem(name)
+         //- +NavItem('Home')
+         //- +NavItem('AboutMe')
+         //- +NavItem('MyProjects')
+         //- +NavItem('MyServices')
+         //- +NavItem('ContactMe')
